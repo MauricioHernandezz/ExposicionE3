@@ -1,0 +1,206 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {  /*color de fondo #FCD0B4*/
+  background-color:#ABB2B9;  
+  color:rgb(51, 51, 51);/*color letra*/
+  font: normal 14px "Open Sans", sans-serif;
+  margin:0;
+}
+
+h1,h2,h3,p,li {
+  text-align:left;	
+}
+
+a {
+  background-color:inherit;
+  color:#333;
+  text-decoration:none; 
+}
+
+a:hover {
+  text-decoration:underline; 
+}	
+
+blockquote {/*letra del segundo parrafo */
+font: italic 18px "Times New Roman",serif;
+width: 90%;
+margin: 5px auto;
+padding: 5px 20px;
+position: relative;
+color: rgb(153, 61, 0);
+}
+/*logo de la uaeh*/
+#header .logo img {
+  height: 6rem;
+  width: 12rem;
+}
+
+
+#caja {
+  width:80%;
+  background-color:rgb(255, 255, 255);/*color fondo de caja de adentro*/
+  color:inherit;
+  padding:0;
+  margin:30px auto 15px auto; 
+}
+
+#header {  /*color de caja donde esta el logo*/
+  background: 		#8B0000;
+  height:100px;
+  /*degradado menu*/
+  -webkit-box-shadow: 0px 40px 20px -15px #d9b0a3;
+  -moz-box-shadow: 0px 50px 40px -15px #8e2d07;
+  box-shadow: 0px 50px 40px -15px #8e2d07;
+  border:1px solid #fff;
+  border-bottom:0px solid #fff;
+}
+#segundo {  /*color de caja donde esta el logo*/
+  background: #8B0000;
+  height:10px;
+  /*degradado menu*/
+  border:1px solid #fff;
+  border-bottom:0px solid #fff;
+}
+
+#header h1 {	
+  text-align:center;
+  padding:0;
+  margin:80px auto 0 auto; 
+}
+
+#header a
+{	background-color:inherit;
+	color:#fff;
+	text-decoration:none; }
+	
+#header p
+{	text-align:center;
+	margin:0 auto; }
+
+nav {
+  text-align:center;
+  margin:15px auto;
+}
+	
+ul#menu {
+    list-style-type: none;
+    margin: 0 auto;
+    display: table;
+    padding: 0;
+    overflow: hidden;
+    width:50%;
+
+    }
+
+ul#menu li  
+ { 	display: table-cell;
+    text-align:center;  }
+   
+ul#menu li a {
+    background-color:inherit;
+    color: #131212;/*color de menu inicio*/
+    /*display:block;*/
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 1px;
+}
+
+ul#menu li a:hover
+{	background-color:#fff;
+    font-size: 1.3rem;
+	color:rgb(192, 29, 29);	} /*color de menu inicio*/
+
+  /*seccion imagenes*/
+.imagen-particion{
+  margin-left: 30%;
+  margin-top: 17px;
+  width: 45%;
+}
+.imagen-particion:hover{
+    padding: 5px;
+    cursor: pointer;
+}
+	
+/* Contenido */
+#content
+{	text-align:left;
+	width:90%;
+	padding:0 25px 10px 25px;
+	margin:0 auto;	}
+	
+#content h2
+{	
+	padding:0;
+	margin:0 auto; }	
+
+#content h3  /*color subtitulos*/ 
+{	background-color:inherit;
+	color:rgb(153, 61, 0);
+	font:bold 12pt Arial,sans-serif;	
+	padding:0;	}
+
+
+
+
+#content p a
+{	background-color:inherit;
+	color:#690;
+	text-decoration:underline;	} 	
+	
+#content p
+{	text-align:justify;
+	line-height:24px; }
+
+#content p.center { text-align: center; }
+	
+#content li
+{	line-height:24px;	}
+
+#content li a
+{	background-color:inherit;
+	color:#690;
+	text-decoration:none;	}
+
+#content li a:hover
+{	text-decoration:underline; }
+
+#content ul {
+  list-style:none;
+  padding:0;
+}
+	
+#content ul li
+{	list-style-position:inside;
+    text-indent: 0px;
+	padding-left:20px;
+	margin:0; }	
+	/*simbolos de las listas y color*/
+#content ul li:before {
+  content: "\27A4";
+  background-color:inherit;
+  color:rgb(0, 3, 153);
+  font-size:12px;
+}
+
+
+
+/* footer*/
+#footer-int {	
+  background-color:inherit;
+  color:#8e2d07;
+  text-align:center;
+  font-size:11px;
+  padding:5px 0;
+  margin:0 auto;	
+}
+
+#footer-int a /*ultima letra del footer*/
+{	background-color:inherit;
+	color: #8e2d07;
+	text-decoration:none;	}
+	
+
+

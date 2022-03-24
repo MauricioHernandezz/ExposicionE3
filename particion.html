@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Css/style.css" type="text/css" />
+	<meta name="author" content="Moedano Mauricio-Dorle Jasive-Daniela Alejandra">
+    <title>Expo equipo 3</title>
+</head>
+<body>
+<!-- inicio caja -->
+<div id="caja">
+	<!--inicio Header -->
+	<div id="header">
+		<a href="#" class="logo"><img src="imagenes/imagelogo.JPG" alt="logo"></a>
+    </div>
+	<!--inicio Header -->
+<nav>
+		<ul id="menu">
+			<li><a href="index.html" title="Inicio">Inicio</a></li>
+			<li><a href="particion.html" title="Particion">Partición</a></li>
+			<li><a href="Metodologias.html" title="Metodologias">Metodologías</a></li>
+			<li><a href="Herramientas.html" title="Herramientas">Herramientas</a></li>
+			<li><a href="Actividad.html" title="Actividad">Actividad</a></li>
+		</ul>
+</nav>
+<div id="segundo"></div>
+	<!-- inicio Contenido -->
+	<div id="content">
+		<h2><a title="tecnica de particion">Técnica de partición de equivalencia</a></h2>
+        <h3>¿Qué es?</h3>
+		<p>La división en particiones de equivalencia, también llamadas clases de
+            equivalencia, es una técnica de pruebas de caja negra en la que las entradas
+            del programa se clasifican en clases.Considera como perteneciente al
+            dominio de entrada a todas las entradas que puedan tener efecto en la salida
+            de la prueba, positivo o negativo.Todos los miembros de cada clase de
+            equivalencia comparten ciertas características en común que no son
+            compartidas con miembros de otras clases.</p>
+            <img class="imagen-particion" src="imagenes/imagen-particion.JPG" alt="particion">
+
+		<blockquote><p>Cada clase se llama partición de equivalencia porque todos elementos en la
+            clase prueban la misma cosa. Si uno de los elementos de una clase provoca
+            un error, todos los de esa clase probablemente lo harán. La idea principal de
+            esta técnica es identificar los casos de prueba usando un elemento de
+            cada clase de equivalencia.
+            </p></blockquote>
+		<h3>Identificar particiones de equivalencia</h3>
+        <p>Para identificar las particiones de equivalencia es necesario examinar cada
+            condición de entrada, que si has sido prudente estarán en las
+            especificaciones de requerimientos del programa o aplicación. Ten en cuenta
+            que existen dos clases de equivalencia:
+            </p>
+		<ol>
+			<li>Clases válidas: valores de entrada válidos. No quiere decir que tu
+                programa no vaya a fallar con estas entradas, sino que no
+                debería fallar</li>
+			<li>Clases no válidas: valores de entrada no válidos. Representan los
+                valores de entrada que son erróneos y a los que el programa
+                debería responder o bien rechazándolos o manejando una
+                excepción.</li>
+		</ol>
+        <blockquote><p>Establecer las particiones de equivalencia puede ser un proceso subjetivo,
+            por lo que dos personas podrían obtener clases de equivalencia distintas. La
+            clave está en elegir las relaciones que determinan esas clases.
+            </p></blockquote>
+		<h3>Definir particiones de equivalencia</h3>
+        <p>Las clases de equivalencia se definen según una serie de directrices:</p>
+		<ul>
+			<li><a>Rangos:</a> si una entrada está condicionada a un rango de valores
+                (por ejemplo, edades comprendidas entre 18 y 65 años ambos
+                inclusive), se define una clase de equivalencia válida para todos
+                los valores pertenecientes al rango y dos no válidas, una para los
+                valores menores al límite inferior del rango y otra para los
+                mayores al límite superior</li>
+			<li><a>Valor específico:</a> análoga a la anterior, solo que el rango
+                quedaría restringido a un único valor (la edad es de 18 años). Se
+                siguen creando igualmente 1 clase de equivalencia válida y dos
+                no válidas.</li>
+   			<li><a>Número de valores:</a> también como las anteriores, pero teniendo
+                en cuenta el número de valores introducidos (1 a 5 pasajeros
+                sería la clase válida, 0 pasajeros y más de 5 pasajeros las no
+                válidas).</li>
+   			<li><a>Perteneciente a un conjunto:</a> cuando un valor es válido si
+                pertenece a un conjunto (días de la semana en minúscula:
+                «lunes», «martes»…) se define una clase de equivalencia válida
+                para cada uno de los valores del conjunto, además de una no
+                válida, para aquellos valores que no pertenecen a él</li>
+   			<li><a>Valor lógico:</a> se corresponde a la evaluación de una condición
+                (por ejemplo, la edad debe ser mayor o igual a 18). Se establece
+                una clase de equivalencia válida (se cumple la condición) y otra
+                no válida (no se cumple).</li>
+		</ul>
+		</div>
+	
+	<!--fin Contenido -->
+	<!--inicio Footer -->
+    <div id="footer-integrantes">
+        <div >Integrantes <a title="Nombre integrantes">Dorle Jasive Miroslava Orduña López, Daniela Alejandra Valencia Ramirez, Mauricio Moedano Hernandez</a>. Equipo 3</div>
+    </div>
+	<!--fin Footer -->
+</div>
+
+</body>
+</html>
